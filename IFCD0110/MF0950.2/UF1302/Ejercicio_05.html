@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 05</title>
+    <link rel="icon" href="./Img/favicon0.png" type="image/png">
+    <style>
+        /* General */
+        body {
+            background: lightgrey;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        main {
+            width: 85%;
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            background: white;
+        }
+        div {
+            margin: 0px;
+            padding: 0px;
+        }
+        article {
+            margin: 0px;
+            padding: 0px;
+        }
+        header {
+            margin: 0px;
+            padding: 0px;
+        }
+        section {
+            margin: 0px;
+            padding: 0px;
+        }
+        /* Divs */
+        div.h00 {
+            background-color: rgb(0, 110, 200);
+            text-align: center;
+            padding: 15px;
+            color: white;
+        }
+        div.cont {
+            overflow: hidden;
+            margin: auto;
+            width: fit-content;
+        }
+        div.m01 {
+            float: left;
+            margin: 5px;
+            background-color: rgb(0, 110, 200);
+            padding: 5px;
+        }
+        article.art01 {
+            overflow: hidden;
+            float: left;
+            width: 31%;
+            margin: 1.16%;
+        }
+        div.list {
+            overflow: hidden;
+            float: left;
+            width: 20%;
+            margin: 1%;
+        }
+        div.nolist {
+            overflow: hidden;
+            float: left;
+            width: 37%;
+            margin: 1%;
+        }
+        article.art02 {
+            overflow: hidden;
+            float: left;
+            width: 33%;
+            margin: 1%;
+        }
+        aside {
+            overflow: hidden;
+            float: left;
+            width: 28%;
+            margin: 1%;
+        }
+        /* Otros */
+        div.m01>a {
+            color: white;
+            text-decoration: none;
+        }
+        .h2 {
+            color: white;
+            background-color: rgb(200, 80, 50);
+            text-align: center;
+            padding: 10px;
+        }
+        header>h3 {
+            color: rgb(0, 110, 200);
+        }
+        header>p {
+            color: rgb(200, 0, 0);
+        }
+        ul.icono {
+            list-style-image: url(/IFCD0110/MF0950.2/UF1302/Prácticas/Img/E05/lista-icono.png)
+        }
+        span.blue {
+            color: rgb(0, 110, 200);
+            font-weight: bold;
+        }
+        .fin {
+            color: white;
+            background-color: rgb(0, 110, 200);
+            text-align: center;
+            padding: 10px;
+        }
+        footer.fin>div>nav>a {
+            color: white;
+        }
+        /* Listas */
+        dl>dd.red {
+            background: url('/IFCD0110/MF0950.2/UF1302/Prácticas/Img/E05/red_dead_redemption3.jpg') no-repeat left;
+            background-size: 40%;
+            margin: 0;
+            padding: 4px 10px 4px 140px;
+        }
+        dl>dd.tricks {
+            background: url('/IFCD0110/MF0950.2/UF1302/Prácticas/Img/E05/red_dead_redemption2.jpg') no-repeat left;
+            background-size: 40%;
+            margin: 0;
+            padding: 4px 10px 4px 140px;
+        }
+        dl>dd.assasin {
+            background: url('/IFCD0110/MF0950.2/UF1302/Prácticas/Img/E05/assassins-creed-odyssey.jpg') no-repeat left;
+            background-size: 40%;
+            margin: 0;
+            padding: 4px 10px 4px 140px;
+        }
+        dl>dd.call {
+            background: url('/IFCD0110/MF0950.2/UF1302/Prácticas/Img/E05/call-of-duty.jpg') no-repeat left;
+            background-size: 40%;
+            margin: 0;
+            padding: 4px 10px 4px 140px;
+        }
+    </style>
+</head>
+<body><main>
+    <header>
+        <div class="h00">
+            <h1 style="font-size: 4em; margin: 0px">Título del Periódico</h1>
+            <p style="font-size: 1.5em; margin: 0px">El mayor magazine digital de España</p>
+        </div>
+        <div class="cont">
+            <nav>
+                <div class="m01">
+                    <a href="#">Internacional</a>
+                </div>
+                <div class="m01">
+                    <a href="#">Opinión</a>
+                </div>
+                <div class="m01">
+                    <a href="#">Sociedad</a>
+                </div>
+                <div class="m01">
+                    <a href="#">Economía</a>
+                </div>
+                <div class="m01">
+                    <a href="#">Ciencia</a>
+                </div>
+                <div class="m01">
+                    <a href="#">Tecnología</a>
+                </div>
+                <div class="m01">
+                    <a href="#">Cultura</a>
+                </div>
+                <div class="m01">
+                    <a href="#">Gente</a>
+                </div>
+                <div class="m01">
+                    <a href="#">Deportes</a>
+                </div>
+                <div class="m01">
+                    <a href="#">Televisión</a>
+                </div>
+                <div class="m01">
+                    <a href="#">Vídeo</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div class="h2">
+            <h2 style="font-size: 1.5em; margin: 0px">Técnología</h2>
+        </div>
+        <div class="cont">
+            <article class="art01">
+                <header>
+                    <img src="./Img/E05/galaxy-note_9.jpg" alt="Samsung Galaxy Note 9" width="100%">
+                    <h3>
+                        Análisis | Un mes con el Samsung Galaxy Note 9
+                    </h3>
+                    <p>
+                        LAURA PÉREZ <img width="15px" src="./Img/E05/estrella_32x32.png" alt="Estrella"><img width="15px" src="./Img/E05/estrella_32x32.png" alt="Estrella"><img width="15px" src="./Img/E05/estrella_32x32.png" alt="Estrella"><img width="15px" src="./Img/E05/estrella_32x32.png" alt="Estrella"><img width="15px" src="./Img/E05/estrella_32x32.png" alt="Estrella">
+                    </p>
+                </header>
+                <div>
+                    <p>
+                        Probamos el último modelo de la firma coreana, un terminal de gama alta que brilla por su pantalla, su característico lápiz digital S Pen y su funcionamiento con el uso de Inteligencia Artificial.
+                    </p>
+                </div>
+            </article>
+            <article class="art01">
+                <header>
+                    <img src="./Img/E05/pocophone-f1.jpg" alt="Pocophone F1" width="100%">
+                    <h3>
+                        Pocophone F1, ¿el mejor móvil en relación calidad-precio?
+                    </h3>
+                    <p>
+                        ANTONIO SÄNCHEZ  <img width="15px" src="./Img/E05/estrella_32x32.png" alt="Estrella"><img width="15px" src="./Img/E05/estrella_32x32.png" alt="Estrella"><img width="15px" src="./Img/E05/estrella_32x32.png" alt="Estrella">
+                    </p>
+                </header>
+                <div>
+                    <p>
+                        La segunda marca de la china Xiaomi se lanza al mercado con un terminal caracterizado por especificaciones de gama alta y un precio de gama media que logra eliminando lo superfluo.
+                    </p>
+                </div>
+            </article>
+            <article class="art01">
+                <header>
+                    <img src="./Img/E05/honor-view20.jpg" alt="Honor View20" width="100%">
+                    <h3>
+                        Honor View20, un móvil con más píxeles que ninguno
+                    </h3>
+                    <p>
+                        ANA GÓMEZ  <img width="15px" src="./Img/E05/estrella_32x32.png" alt="Estrella"><img width="15px" src="./Img/E05/estrella_32x32.png" alt="Estrella"><img width="15px" src="./Img/E05/estrella_32x32.png" alt="Estrella"><img width="15px" src="./Img/E05/estrella_32x32.png" alt="Estrella">
+                    </p>
+                </header>
+                <div>
+                    <p>
+                        La segunda marca de Huawei lanza un teléfono inteligente con la cámara frontal oculta y la trasera de 48 megapíxeles. Se maneja por inteligencia artificial y por un superprocesador, el más potente.
+                    </p>
+                </div>
+            </article>
+        </div>
+        <div class="cont">
+            <div class="list">
+                <h3><img src="./Img/E05/logo-vodafone.png" alt="logo-vodafone"></h3>
+                <nav>
+                    <ul class="icono">
+                        <li>
+                            <p>
+                                Más populares
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Redes sociales
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Ordenadores
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Gadgets
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Videoconsolas
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Teléfonos Móviles
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                WhatsApp
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Tablets
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Smartphones
+                            </p>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="nolist">
+                <iframe width="100%" height="350" src="https://www.youtube.com/embed/IP3rOxqQQAw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <br><br>
+                <span class="blue">El superordenador que fabrica humanos virtuales para probar medicinas</span>
+            </div>
+            <div class="nolist">
+                <iframe width="100%" height="350" src="https://www.youtube.com/embed/6_YopNlxcYU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <br><br>
+                <span class="blue">Una retina de grafeno para devolver la vista a 230 millones de personas</span>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="h2">
+            <h2 style="font-size: 1.5em; margin: 0px">Videojuegos</h2>
+        </div>
+        <div class="cont">
+            <article class="art02">
+                <header>
+                    <img width="100%" src="./Img/E05/fornite.jpg" alt="Fortnite">
+                    <h3>
+                        Cómo completar los desafíos de Fortnite de la Semana 8 de la Temporada 7
+                    </h3>
+                    <p>
+                        JOSÉ ORTÍZ <img width="15px" src="./Img/E05/estrella_32x32.png" alt="Estrella"><img width="15px" src="./Img/E05/estrella_32x32.png" alt="Estrella"><img width="15px" src="./Img/E05/estrella_32x32.png" alt="Estrella"><img width="15px" src="./Img/E05/estrella_32x32.png" alt="Estrella"><img width="15px" src="./Img/E05/estrella_32x32.png" alt="Estrella">
+                    </p>
+                </header>
+                <div>
+                    <p>
+                        Ya están disponibles los desafíos correspondientes a la Semana 8 de la Temporada 7 del Pase de Batalla de Fortnite Battle Royale. Completadlos con nuestra guía.
+                    </p>
+                </div>
+            </article>
+            <article class="art02">
+                <header>
+                    <img width="100%" src="./Img/E05/gta5.jpg" alt="gta5">
+                    <h3>
+                        Todos los trucos y claves de GTA 5 en PS3, PS4, PC, Xbox One y 360s
+                    </h3>
+                    <p>
+                        PEDRO ZAMBRANO <img width="15px" src="./Img/E05/estrella_32x32.png" alt="Estrella"><img width="15px" src="./Img/E05/estrella_32x32.png" alt="Estrella"><img width="15px" src="./Img/E05/estrella_32x32.png" alt="Estrella"><img width="15px" src="./Img/E05/estrella_32x32.png" alt="Estrella"><img width="15px" src="./Img/E05/estrella_32x32.png" alt="Estrella">
+                    </p>
+                </header>
+                <div>
+                    <p>
+                        Ganar dinero infinito, coches de lujo, salud, munición, armas, tanques, eliminar estrellas… Recopilamos todos los trucos y claves de GTA 5 (Grand Theft Auto V) para todas las plataformas
+                    </p>
+                </div>
+            </article>
+            <aside>
+                <dl>
+                    <dt><b>Contenido relacionado</b></dt><br>
+                    <dd class="red"><span class="blue">Red Dead Redemption 2, número 1 en USA.</span></dd><hr>
+                    <dd class="tricks"><span class="blue">Todos los trucos de Red Dead Redemption 2.</span></dd><hr>
+                    <dd class="assasin"><span class="blue">Assassin's Creed Odyssey, Guía completa</span></dd><hr>
+                    <dd class="call"><span class="blue">Call of Duty: Black Ops 4, Guía de logros y trofeos</span></dd><hr>
+                </dl>
+            </aside>
+        </div>
+
+    </section>
+    <footer class="fin">
+        <div>
+            <nav>
+                <a href="#">Aviso Legal</a> | <a href="#">Política de privacidad </a>| <a href="#">Política de protección de datos</a> | <a href="#">Política de Cookies</a>
+            </nav>
+        </div>
+        <div>
+            <details>
+                <summary>©2004-2018.</summary>
+                <p>WebMaster ™. Todos los derechos reservados .</p>
+                <p>Todo el contenido y gráficos de esta web son propiedad de WebMaster ™</p>
+            </details>
+        </div>
+    </footer>
+</main></body>
+</html>

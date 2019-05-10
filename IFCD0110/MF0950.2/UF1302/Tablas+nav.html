@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tablas+nav</title>
+    <link rel="icon" href="./Img/favicon0.png" type="image/png">
+    <style>
+        th, td {
+            border: 1px solid black;
+            padding: 15px;
+            text-align: center;}
+        .T01 {
+            width: 100%;
+            height: auto;
+            margin: auto;
+            padding: auto;
+            border-spacing: 1px;}
+        .T02 {
+            border-collapse: collapse;}
+        .T02 th, .T02 td {
+            padding: 0.5em;}
+        .T02 th[scope=col] {
+            border-bottom: 2px solid #333;
+            border-right: 2px solid #333;}
+        .T02 th+th[scope=col] {
+            border-right: 1px dotted #666;}
+        .T02 th [scope=row] {
+            border-right: 10px solid #333;}
+        .T03 {
+            width: 90%;
+            margin: 5%;
+            float: left;}
+        .T03 th {
+            background-color: blue;}
+        .T03 td {
+            background-color: greenyellow;}
+    </style>
+</head>
+<body>
+    <h1>HTML Tablas</h1>
+    <p>En primer lugar un par de formas de poner índices con links:</p>
+    <hr>
+    <li><a href="./Indice.html">Home</a></li>
+    <hr>
+    <p>
+        <nav>
+            <ol style="list-style-type:upper-roman">
+            <li><a href="#sect1">C, S, C, R</a>
+                <dl>
+                    <dt>Caption</dt>
+                    <dd>- Empieza por Cap</dd>
+                    <dd>- Como Capitán América</dd>
+                    <dd>- O como capital letters
+                        <ul>
+                            <li>Eso me lleva a pensar en la guerra</li>
+                            <li>Pero no una guerrilla cutre como las que los paises africanos tienen ahora, no.</li>
+                            <li>Hablo de la Gran Guerra.</li>
+                            <li>Todo comenzó una tranquila tarde de verano del 1903...
+                                <ol style="list-style-type:lower-greek">Hagamos un pequeño inciso hablando de los mejores euquipamientos para un soldado en la 1ªGM (Alemán por supuesto)
+                                    <li><dl>
+                                        <dt>Mascara de gás modelo M1917</dt>
+                                        <dd>Lentes dobles de celuloide reforzado</dd>
+                                        <dd>Máscara de piel impregnada de solución oleosa</dd>
+                                        <dd>Cartucho filtrante</dd>
+                                        <dd>Diatromita impregnada de urotropina, carbonato potásico y piperazina</dd>
+                                        <dd>Carbón activado</dd>
+                                        <dd>Diatromita impregnada de solución de carbonato potásico y cubierta de una fina capa de carbón vegetal</dd>
+                                    </dl> </li>
+                                    <li><dl>
+                                            <dt>Casco M16</dt>
+                                            <dd>Lentes dobles de celuloide reforzado</dd>
+                                            <dd>Máscara de piel impregnada de solución oleosa</dd>
+                                            <dd>Cartucho filtrante</dd>
+                                            <dd>Diatromita impregnada de urotropina, carbonato potásico y piperazina</dd>
+                                            <dd>Carbón activado</dd>
+                                            <dd>Diatromita impregnada de solución de carbonato potásico y cubierta de una fina capa de carbón vegetal</dd>
+                                        </dl> </li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </dd>
+                    <dt>Span</dt>
+                    <dd>- Spank!</dd>
+                    <dt>Col</dt>
+                    <dd>- Muy cool</dd>
+                    <dt>Row</dt>
+                    <dd>- WOWOWOW</dd>
+                </dl>
+            </li>
+            <li><a href="#sect2">Scope</a></li>
+            <li><a href="#sect3">Tabla Potente</a></li>
+            </ol>
+        </nav>
+    </p>
+    
+    <hr>
+    <div id="sect1">
+        <h2>Caption, span, col, row.</h2>
+        <div>
+            <table>
+                <caption>caption</caption>
+                <colgroup>
+                    <col span="2" style="background-color:red"> <!-- 1ª y 2ª columnas (ocupa 2 por el span) tendrán este estilo. -->
+                    <col style="background-color:yellow"> <!-- 3ª columna (ya que se rellenan en orden) tendrá este estilo. -->
+                </colgroup>
+                <tr>
+                    <th>Title</th>
+                    <th colspan="2">colspan="2"</th> <!--Este th ocupará 2 columnas, desplazando a los demás y creando 1 columna.-->
+                    <th>Title</th>
+                    <th>Title</th>
+                    <th>Title</th>
+                </tr>
+                <tr>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td rowspan="3">rowspan="3"</td> <!--Este td ocupará 3 filas, desplazando las 2 extra que ocupa hacia la derecha, creando 1 columna.-->
+                    <td>Content</td>
+                </tr>
+                <tr>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                </tr>
+                <tr>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                </tr>
+                <tr>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                </tr>
+                <tr>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                </tr>
+                <tr>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                </tr>
+                <tr>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                </tr>
+                <tr>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="sect2">
+        <h2>Scope</h2>
+        <p>Syntax: <code>&lt;td scope=&quot;col|row|colgroup|rowgroup&quot;&gt;&lt;/td&gt;</code></p>
+        <p>Como podemos ver no sirve para nada, es un remanente del HTML4.</p>
+        <div>
+            <table class="T01">
+                <caption>Tableception</caption>
+                <tr>
+                    <th scope="row">Title</th>
+                    <th scope="row">Title</th>
+                </tr>
+                <tr>
+                    <td rowspan="2" style="vertical-align: top"><table class="T02">
+                <tr>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                </tr>
+                <tr>
+                    <td scope= "col">scope= "col"</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                </tr>
+                <tr>
+                    <td>Content</td>
+                    <td scope= "col">scope= "col"</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                </tr>
+                <tr>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td scope= "row">scope= "row"</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                </tr>
+                <tr>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td scope= "row">scope= "row"</td>
+                    <td>Content</td>
+                </tr>
+            </table></td>
+                    <td><table class="T01">
+                <tr>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                </tr>
+                <tr>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                </tr>
+                <tr>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                </tr>
+                <tr>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                </tr>
+            </table></td>
+                </tr>
+                <tr>
+                    <td><table class="T01">
+                <tr>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                </tr>
+                <tr>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                </tr>
+                <tr>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                </tr>
+                <tr>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                </tr>
+            </table></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="sect3">
+        <h2>Tabla Potente</h2>
+        <hr>
+        <div>
+            <table class="T03">
+                <caption>Caption</caption>
+                <thead>
+                <tr>
+                    <th rowspan="2">Thead</th>
+                    <th rowspan="2">tr rowspan="2"</th>
+                    <th colspan="3">colspan3</th>
+                    
+                    
+                    <th colspan="2">colspan2</th>
+                    
+                </tr>
+                <tr>
+                    
+                    
+                    <th>Título</th>
+                    <th>Título</th>
+                    <th>Título</th>
+                    <th>Título</th>
+                    <th>Título</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td rowspan="3" style="background-color: red">Tbody</td>
+                    <td>tr</td>
+                    <td>Texto</td>
+                    <td>Texto</td>
+                    <td>Texto</td>
+                    <td>Texto</td>
+                    <td>Texto</td>
+                </tr>
+                <tr>
+                    
+                    <td>tr</td>
+                    <td>Texto</td>
+                    <td>Texto</td>
+                    <td>Texto</td>
+                    <td>Texto</td>
+                    <td>Texto</td>
+                </tr>
+                <tr>
+                    
+                    <td>tr</td>
+                    <td>Texto</td>
+                    <td>Texto</td>
+                    <td>Texto</td>
+                    <td>Texto</td>
+                    <td>Texto</td>
+                </tr>
+                </tbody>
+                <tfooter>
+                <tr scope="row" >
+                    <td style="background-color: blue">Footer</td>
+                    <td style="background-color: red">tr</td>
+                    <td><strong>Texto</strong></td>
+                    <td><strong>Texto</strong></td>
+                    <td><strong>Texto</strong></td>
+                    <td><strong>Texto</strong></td>
+                    <td><strong>Texto</strong></td>
+                </tr>
+                </tfooter>
+            </table>
+        </div>
+    </div>
+    <a href="./Indice.html">Home</a>
+</body>
+</html>
+

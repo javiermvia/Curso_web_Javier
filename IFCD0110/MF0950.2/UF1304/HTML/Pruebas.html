@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div.fileinputs {
+        position: relative;
+        }
+        
+        div.fakefile {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 1;
+        }
+        
+        input.file {
+            position: relative;
+            text-align: right;
+            -moz-opacity:0 ;
+            filter:alpha(opacity: 0);
+            opacity: 0;
+            z-index: 2;
+        }
+        .inputfile {
+            width: 0.1px;
+            height: 0.1px;
+            opacity: 0;
+            overflow: hidden;
+            position: absolute;
+            z-index: -1;
+        }
+        .inputfile + label {
+            font-size: 1.25em;
+            font-weight: 700;
+            color: white;
+            background-color: black;
+            display: inline-block;
+        }
+        .inputfile:focus + label, .inputfile + label:hover {
+            background-color: red;
+        }
+        .inputfile + label {
+            cursor: pointer; /* "hand" cursor */
+        }
+        .inputfile:focus + label {
+            outline: 1px dotted #000;
+            outline: -webkit-focus-ring-color auto 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="fileinputs">
+        <input type="file" class="file" />
+        <div class="fakefile">
+            <input />
+            <img src="search.gif" />
+        </div>
+    </div>
+    <input type="file" name="file" id="file" class="inputfile" />
+    <label for="file">Choose a file</label>
+</body>
+</html>

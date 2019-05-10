@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Índice</title>
+    <link rel="icon" href="./Img/favicon0.png" type="image/png">
+    <style>
+        body {
+            background: url(/IFCD0110/MF0950.2/UF1302/Img/BackgroundSpaceMarines.jpg) no-repeat center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        header {}
+
+        /* Estilos de Enlace */
+
+        a:link {
+            color: red; 
+            background-color: transparent; 
+            text-decoration: underline;
+        }
+
+        a:visited {
+            color: rgb(0, 100, 10);
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: green;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        /* Estilos para div */
+        
+        .indice {
+            border: linear-gradient black 1px;
+            margin: 5px;
+            padding: 5px;
+            float: left;
+            inline-size: 90%;
+            width: 600px;
+            background: linear-gradient(to left, #ffffff00 0%, #5a5a5a 100%);
+            display: flex;
+            align-items: center;
+        }
+        .imagen {
+            border-right: dotted black 2px;
+            margin: 5px;
+            padding: 5px;
+            width: 210px;
+            overflow: hidden;
+            float: left;
+        }
+        .enlace {
+            border: solid black 1px;
+            margin: 5px;
+            padding: 5px;
+            width: 250px;
+            overflow: hidden;
+            float: left;
+            vertical-align: middle;       
+        }
+        .mul {
+            margin: 1px;
+            margin-left: 5px;
+            padding: 1px;
+            float: left;
+            border: 1px solid black;
+            width: 50%;
+            overflow: hidden;
+            text-align: center;
+            display: none;
+            visibility: hidden;
+        }
+        .indice:hover .mul {
+            display: block;
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="width: 90%; border: solid black 1px; overflow: hidden; margin: auto; text-align: center;">
+            <h1><img style="vertical-align:middle" src="/IFCD0110/MF0950.2/UF1302/Img/minispacemarine.gif" alt="Mini-marine espacial" width="100px">
+            <span style="vertical-align:middle; font-size: 130%; color: red; text-decoration-color: red; text-decoration-line: underline">Índice General del sitio</span>
+            <img style="vertical-align:middle" src="/IFCD0110/MF0950.2/UF1302/Img/minispacemarine.gif" alt="Mini-marine espacial" width="100px"></h1>
+        </div>
+        
+    </header>
+    <hr>
+    <div>
+        <img src="/IFCD0110/MF0950.2/UF1302/Img/StarCraftII_LogoWiki.png" alt="Logo de Starcraft II" width="auto" height="auto">
+    </div>
+    <div>
+        <nav>
+            <ul style="list-style-type:none">
+                <div class="indice"><li><a href="./SupuestoIndex.html">
+                    <div class="imagen">
+                        <img src="/IFCD0110/MF0950.2/UF1302/Img/enlaces.png" alt="Enlace" width="200">
+                    </div>
+                    <div class="enlace">
+                        Índice antiguo
+                    </div>
+                    <div class="mul">
+                        <iframe name="Javier Mercado" width="100%" height="auto" src="http://10.2.3.20:8080//IFCD0110/MF0950.2/UF1302/SupuestoIndex.html" frameborder="1"></iframe>
+                    </div>
+                </a></li></div>
+                <div class="indice"><li><a href="./Bloques.html">Bloques</a></li></div>
+                <div class="indice"><li><a href="./Ejercicio_01.html">Ejercicio1</a></li></div>
+                <div class="indice"><li><a href="./Formatos.html">Formatos</a></li></div>
+                <div class="indice"><li><a href="./Tablas+nav.html">Tablas</a></li></div>
+                <div class="indice"><li><a href="./Matrix.html">Matrix</a></li></div>
+                <div class="indice"><li><a href="./Pruebas.html">Pruebas</a></li></div>
+                <div class="indice"><li><a href="./Multimedia.html">Multimedia</a></li></div>
+                <div class="indice"><li><a href="./Sala_de_Control.html">Sala de Control</a></li></div>
+            </ul>
+        </nav>
+    </div>
+    <a href="./Indice.html">Home</a>
+</body>
+</html>

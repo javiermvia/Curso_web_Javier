@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>pruebasjs2</title>
+    <link rel="stylesheet" href="../css/estilo_basico.css">
+    <link rel="icon" href="/Necesarios/favicon0.png" type="x-icon/image">
+    <script>
+        function Gscript(params) {
+            /* datos */
+            var operator = "+";
+            var description = "sumar";
+            var variables = "var x=5; var y=2;";
+            var operations = "z=x+y;";
+            var x = 5;
+            var y = 2;
+            var z = x+y;
+            /* relleno */
+            document.getElementById("demo1").innerHTML = operator;
+            document.getElementById("demo2").innerHTML = description;
+            document.getElementById("demo3").innerHTML = variables;
+            document.getElementById("demo4").innerHTML = operations;
+            document.getElementById("demo5").innerHTML = z;
+            document.getElementById("demo6").innerHTML = 'pues muy buenas';
+            document.getElementById('demo7').innerHTML = "pues muy buenas";
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <table>
+            <tr>
+                <th>operator</th>
+                <th>description</th>
+                <th>variables</th>
+                <th>operations</th>
+            </tr>
+            <tr>
+                <td>operator</td>
+                <td>description</td>
+                <td>variables</td>
+                <td>operations</td>
+            </tr>
+        </table>
+        <div id="demo1"></div>
+        <div id="demo2"></div>
+        <div id="demo3"></div>
+        <div id="demo4"></div>
+        <div id="demo5"></div>
+        <div id="demo6"></div>
+        <div id="demo7"></div>
+        <div id="demo8"></div>
+        <div id="demo9"></div>
+        <div id="demo10"></div>
+        <button onclick="Gscript(document)">JS</button>
+    </main>
+</body>
+</html>

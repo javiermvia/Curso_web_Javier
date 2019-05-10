@@ -1,0 +1,31 @@
+table, th, td {border: 1px solid black;}
+div {border-collapse: separate;
+    margin: 2px;
+    padding: 2px;}
+.softgray {background-color: rgba(0, 0, 0, 0.150);
+    border-collapse: separate;
+    margin: 3px;
+    padding: 3px;}
+.tip {background-color: rgba(220, 160, 20, 0.300);
+    border: 2px solid rgb(220, 160, 20);
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 4px;
+    margin-right: 4px;}
+body {font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 90%;
+    margin: 0 auto}
+h1 {font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif}
+h2, h3 {font-family: fantasy}
+hr {border: 2px solid rgb(220, 160, 20);
+    margin: 4px}
+code {color: chartreuse}
+.HTMLtags {background-color: rgba(25, 0, 255, 0.500);
+    border: 2px solid rgb(10, 8, 88);
+    margin: 4px;
+    padding: 4px;
+    font-size: 20px}
+code span {color: mediumblue;}
+code span span {color: brown}
+code span span span {color: crimson}
+.dotted {border-style: dotted}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pruebas JS</title>
+    <link rel="stylesheet" href="../css/estilo_basico.css">
+    <link rel="icon" href="/Necesarios/favicon0.png" type="x-icon/image">
+    <script>
+        function demo4(obj) {
+            obj.style.display="none"
+        }
+    </script>
+</head>
+<body>
+<main>
+    <h2>My First JavaScript</h2>
+
+    <button type="button"
+    onclick="document.getElementById('demo1').innerHTML = Date()">
+    Click me to display Date and Time.</button>
+
+    <p id="demo1"></p>
+
+    <h2>What Can JavaScript Do?</h2>
+
+    <p id="demo2">JavaScript can change HTML content.</p>
+    <button type="button" onclick='document.getElementById("demo2").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+    <p>JavaScript can change HTML attribute values.</p>
+    <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+    <button onclick="document.getElementById('demo3').style.backgroundColor='green'">Pass</button>
+    <div id="demo3" style="padding:30px;">Semáforo</div>
+    <button onclick="document.getElementById('demo3').style.backgroundColor='red'">Stop</button>
+
+    <div onclick="demo4(this)">¡No me mates!</div>
+
+<!-- ------------------------------------------- -->
+<div style="margin:10px; padding:10px;">
+
+<button onclick="f1()">W3schools</button>
+<button onclick="f2()">Confirm</button>
+<button id="b3" onclick="f3()">Do you understand the consequences?</button>
+<button onclick="f4()">Your data</button>
+<button onclick="f5()">Terms and conditions</button>
+<button onclick="f6()">Give me the day</button>
+<button onclick="f7()">Open</button>
+<button onclick="f8()">Close</button>
+<button onclick="f9()">Print</button>
+<button onclick="f10()">interval</button>
+<button onclick="f11()">timeout</button>
+<button id="b12" onclick="f12()">timer</button>
+<button id="b13" onclick="f13()">Encoder</button>
+<button id="b14" onclick="f14()">Decoder</button>
+<button id="b15" onclick="f15()">NewW1</button>
+<button id="b16" onclick="f16()">MtoW1</button>
+<button id="b17" onclick="f17()">MbyW1</button>
+<button id="b18" onclick="f18()">stdsize</button>
+<button id="b19" onclick="f19()">biggersize</button>
+<button id="b20" onclick="f20()">smallersize</button>
+<button id="b21" onclick="f21()">closeW1</button>
+
+<!-- ------------------------------------------- -->
+<script>
+    function f1() {
+        window.open("https://www.w3schools.com");
+    }
+    function f2() {
+        confirm("Press a button!");
+    }
+    function f3() {
+        var txt;
+        if (confirm("Press a button!") == true) {
+            txt = "Then go and open your path!";
+        }
+        else {
+            txt = "Then you are doomed";
+        }
+        document.getElementById("b3").innerHTML = txt;
+    }
+    function f4() {
+        var name = prompt('Name');
+        var surname = prompt('Surname');
+        window.alert("Name: " + name + "\n" + "Surname: " + surname)
+    }
+    function f5() {
+        var txt = "Acepta";
+        /* var num = ; */
+        if (confirm(txt) == true) {
+            
+        }
+        else {
+            f5();
+        } 
+    }
+    function f6() {
+        var ndate = new Date();
+        var nday = ['D','L','M','X','J','V','S'];
+        ndate.setDate(2000,1,1)
+        window.alert(getDate())
+    }
+    function f7(open) {
+        myWindow = window.open("", "myWindow", "width=200, height=200");
+        myWindow.document.write("MYWINDOW");
+    }
+    function f8(close) {
+        myWindow.close();
+    }
+    function f9(print) {
+        window.print();
+    }
+    function f10(interval) {
+        var counter = 0;
+        var looper = setInterval(function(){ 
+            alert("Hello");
+            counter++;
+            console.log("Counter is: " + counter);
+            if (counter >= 2)
+            {
+                clearInterval(looper);
+            }
+        }, 2000);
+    }
+    function f11(timeout) {
+        setTimeout(function(){ alert("Hello"); }, 2000);
+    }
+    function f12(timer) {
+        /* var myVar = setInterval(myTimer, 1000); */
+        var time = new Date().toLocaleTimeString();
+        document.getElementById("b12").innerHTML = time;
+    }
+    var uncoded = "Hello World"
+    var coded = window.btoa(uncoded)
+    function f13(btoa) {
+        document.getElementById("b13").innerHTML = window.btoa(uncoded);
+    }
+    function f14(atob) {
+        document.getElementById("b14").innerHTML = window.atob(coded);
+    }
+    var W1;
+    function f15(open) {
+        W1 = window.open("", "W1", "width=50, height=50");
+        W1.document.write("W1")
+    }
+    function f16(mto) {
+        W1.moveTo(150, 150);
+        W1.focus();
+    }
+    function f17(mby) {
+        W1.moveBy(50, 50);
+        W1.focus();
+    }
+    function f18(stdsize) {
+        W1.resizeTo(50, 50);
+        W1.focus();
+    }
+    function f19(biggersize) {
+        W1.resizeBy(10, 10);
+        W1.focus();
+    }
+    function f20(smallersize) {
+        W1.resizeBy(-10, -10);
+        W1.focus();
+    }
+    function f21(close) {
+        W1.close();
+    }
+</script>
+</div>
+<!-- ------------------------------------------- -->
+</main>
+</body>
+</html>

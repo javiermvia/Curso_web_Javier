@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formularios</title>
+    <!-- Datos de formulario -->
+    <datalist id="browsers">
+        <option value="Internet Explorer">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+    </datalist>
+</head>
+<body>
+    <h1>Formulario Cutre</h1>
+    <form action="../PHP/action_page.php" target="_blank" method="POST">
+        <fieldset>
+            <legend>Datos principales</legend>
+            Dime tu nombre:<br>
+            <input type="text" name="firstname"><br>
+            Ya que estás, tu apellido:<br>
+            <input type="text" name="lastname"><br>
+            Alias:<br>
+            <input type="text" name="Alias"><br>
+        </fieldset>
+        <fieldset>
+            <legend>¿Qué eres?</legend>
+            <input type="radio" name="gender" value="male"> Male<br>
+            <input type="radio" name="gender" value="female"> Female<br>
+            <input type="radio" name="gender" value="Ninja turtle"> Ninja Turtle<br>
+            <input type="radio" name="gender" value="other"> Other<br>
+        </fieldset>
+        <fieldset>
+            <legend>Decisiones</legend>
+            Dictador favorito:<br>
+            <select name=" Dictator" id="" size="1">
+                <option value="Franco">Franco</option>
+                <option value="Hitler">Hitler</option>
+                <option value="Lenin">Lenin</option>
+                <option value="Stalin">Stalin</option>
+                <option value="Mussolini">Mussolini</option>
+                <option value="Kim Jong-un">Kim Jong-un</option>
+                <option value="Saddam Hussein">Saddam Hussein</option>
+            </select><br>
+            <button type="button" onclick="alert('Franco no pediría ayuda. ¡Al exilio!')">¿Necesitas ayuda?</button><br>
+            <textarea name="message" rows="10" cols="30">
+                The cat was playing in the garden.
+            </textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Exploradores</legend>
+            Explorador habitual: <br>
+            <input list="browsers"><br>
+        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
+    <form action="/action_page.php" target="_blank" method="POST"
+        oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0
+        <input type="range"  id="a" name="a" value="50">
+        100 +
+        <input type="number" id="b" name="b" value="50">
+        =
+        <output name="x" for="a b"></output>
+        <br><br>
+        <input type="submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,38 @@
+
+/* Configuración General */
+* {
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.container {
+    width: 100%;
+}
+.img1 {
+    width: 100%;
+}
+
+/* --- Header --- */
+header {
+    width: 1000px;
+    margin: auto;
+}
+#fig-RALI {
+    width: 20%;
+}
+
+/* --- Figmotion --- */
+#figmotion {
+    width: 100%;
+}
+
+/* --- Main --- */
+main {
+    width: 1000px;
+    margin: auto;
+}
+
+/* --- Footer --- */
+footer {
+    width: 1000px;
+    margin: auto;
+}

@@ -1,0 +1,28 @@
+* {
+    border: 1px solid black;
+}
+main {
+    width: 90%;
+    margin: auto;
+}
+div {
+    margin: 10px;
+    padding: 10px;
+    width: fit-content;
+}
+.d0 {
+    text-align: center;
+}
+.d1 {
+    display: inline-block;
+}
+/* Fake Placeholder */
+[contenteditable=true]:empty:before{
+    content: attr(placeholder);
+    display: block; /* For Firefox */
+}
+[contenteditable=true] {
+    border: 1px dashed #AAA;
+    width: 290px;
+    padding: 5px;
+}

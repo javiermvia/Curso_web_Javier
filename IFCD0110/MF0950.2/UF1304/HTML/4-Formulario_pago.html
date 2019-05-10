@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario de pago</title>
+    <link rel="stylesheet" href="../CSS/4-Formulario_pago.css">
+</head>
+<body>
+    <h1>Formulario de pago</h1>
+    <form action="../PHP/action_page.php" target="_blank" method="POST">
+        <div>
+            <div>
+                <h2>Dirección de Envio</h2>
+                <label for="nombre"><img src="" alt=""> Nombre completo</label>
+                <input name="nombre" type="text">
+                <label for="email"><img src="" alt=""> Email</label>
+                <input name="email" type="text">
+                <label for="direccion"><img src="" alt=""> Dirección</label>
+                <input name="direccion" type="text">
+                <label for="ciudad"><img src="" alt=""> Ciudad</label>
+                <input name="ciudad" type="text">
+                <div>
+                    <label for="estado"><img src="" alt=""> Estado</label>
+                    <input name="estado" type="text">
+                    <label for="CP"><img src="" alt=""> Código Postal</label>
+                    <input name="CP" type="text">
+                </div>
+            </div>
+            <div>
+                <h2>Pago</h2>
+                <label for="tarjeta"><img src="" alt=""> Selecciona una tarjeta</label>
+                <input name="tarjeta" type="range">
+                <label for="titular"><img src="" alt=""> Titular de la tarjeta</label>
+                <input name="titular" type="text">
+                <label for="numero"><img src="" alt=""> Número de tarjeta de crédito</label>
+                <input name="numero" type="text">
+                <label for="mes"><img src="" alt=""> Exp Mes</label>
+                <input name="mes" type="text">
+                <div>
+                    <label for="año"><img src="" alt=""> Exp Año</label>
+                    <input name="año" type="text">
+                    <label for="CVV"><img src="" alt=""> CVV</label>
+                    <input name="CVV" type="text">
+                </div>
+            </div>
+        </div>
+        <div>
+            <input type="checkbox"> Acepto los términos y condiciones de privacidad.
+        </div>
+    </form>
+</body>
+</html>

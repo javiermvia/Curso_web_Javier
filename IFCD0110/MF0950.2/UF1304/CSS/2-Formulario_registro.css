@@ -1,0 +1,56 @@
+* {
+    /* border: 1px solid black; */
+    box-sizing: border-box; 
+}
+body {
+    width: 40%;
+    margin: auto;
+    overflow: scroll;
+}
+figure {
+    overflow: hidden;
+    width: 50%;
+    margin: 20px auto;
+    margin-top: 50px;
+    border-radius: 1000px;
+}
+img {
+    width: 100%;
+}
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 10px;
+}
+input[type=text]:invalid,
+input[type=password]:invalid {
+    background-color: rgba(255, 0, 0, 0.1);
+}
+input[type=text]:valid,
+input[type=password]:valid {
+    background-color: rgba(0, 128, 0, 0.1);
+}
+input[type=submit] {
+    width: 100%;
+    background-color: rgb(62, 104, 0);
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+}
+div {
+    background-color: rgba(127, 255, 212, 0.2);
+    padding: 20px 0px;
+}
+a {
+    display: inline-block;
+}
+button {
+    float: left;
+    padding: 10px;
+    background-color: orangered;
+    border-radius: 3px;
+}
+span {
+    float: right;
+    margin: 10px 0px;
+}

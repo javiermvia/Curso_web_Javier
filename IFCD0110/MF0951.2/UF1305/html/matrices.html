@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Métodos de matrices Javascript</title>
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description" content="Aprende Javascript con ejemplos pr&aacute;cticos">
+    <script src="../js/matrices.js"></script>
+    <link href="../css/estilo_basico.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="/Necesarios/favicon0.png">
+</head>
+<body>
+    <h1>Array</h1>
+    <table class="t1">
+        <tr>
+            <th>Datos</th>
+            <th>Función</th>
+            <th>Resultado</th>
+        </tr>
+        <tr>
+            <td id="t1d" contenteditable="true" placeholder="Item1 Item2 Item3" onclick="f1()"></td>
+            <td>Mediante Slice, Search e Index, se preparan los datos y con new Array los transformamos en un array. Esta función no está optimizada y requiere que el usuario inserte un espacio tras la última palabra para que funcione correctamente.</td>
+            <td id="t1r"></td>
+        </tr>
+        <tr>
+            <td id="t2d" contenteditable="true" placeholder="Item1 Item2 Item3" onclick="f2()"></td>
+            <td>Usando Split la anterior función se vuelve mucho más simple.</td>
+            <td id="t2r"></td>
+        </tr>
+        <tr>
+            <td id="t3d" contenteditable="true" placeholder="Item1 Item2 Item3" ondblclick="f3()"></td>
+            <td>Establece una matriz inicial, a continuación te permite añadir un nuevo elemento mediante splice</td>
+            <td id="t3r"></td>
+        </tr>
+        <tr>
+            <td id="t4d" contenteditable="true" placeholder="Número" ondblclick="f4()"></td>
+            <td>Rangos numéricos controlados por if y else. Versión propia.</td>
+            <td id="t4r"></td>
+        </tr>
+        <tr>
+            <td id="t5d" contenteditable="true" placeholder="Número" ondblclick="f5()"></td>
+            <td>Rangos numéricos controlados por if y else. Versión Paco.</td>
+            <td id="t5r"></td>
+        </tr>
+        <tr>
+            <td id="t6d" contenteditable="true" placeholder="Número" ondblclick="f6()"></td>
+            <td>Pruebas numéricas</td>
+            <td id="t6r"></td>
+        </tr>
+        <tr>
+            <td id="t7d" contenteditable="true" placeholder="Número" ondblclick="f7()"></td>
+            <td>RegExp.test</td>
+            <td id="t7r"></td>
+        </tr>
+    </table>
+    <button onclick="">Púlsame</button>
+    <div class="d0" id="d0">
+        <div class="d1" id="d1">1</div>
+        <div class="d1" id="d2">2</div>
+        <div class="d1" id="d3">3</div>
+        <div class="d1" id="d4">4</div>
+        <div class="d1" id="d5">5</div>
+        <div class="d1" id="d6">6</div>
+        <div class="d1" id="d7">7</div>
+        <div class="d1" id="d8">8</div>
+    </div>
+</body>
+</html>

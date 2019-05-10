@@ -1,0 +1,282 @@
+
+a {
+    text-decoration: none;
+    border: 2px outset lightgrey;
+    line-height: 1.35em;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+a:visited {
+    background: repeating-linear-gradient(60deg , yellow 0%, yellow 20%, black 20%, black 25%);
+    color: red;
+}
+a:hover {
+    text-decoration: none;
+    color: lawngreen;
+    background: repeating-linear-gradient(60deg , yellow 0px, yellow 20px, black 20px, black 25px);
+}
+a:active {
+    text-decoration: none;
+    border: 2px inset lightgrey;
+}
+/* Menú 1 */
+#div01 {
+    width: 80%;
+    margin: auto;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border: 1px solid black;
+}
+#div01 ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+#div01 ul li {
+    display: inline-block;
+    padding: 20px;
+}
+/* Menú 2 */
+#div02 {
+    width: 80%;
+    margin: auto;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border: 1px solid black;
+}
+#div02 ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+#div02 ul li {
+    float: left;
+    padding: 20px;
+    margin: 0.125em;
+}
+/* Menú 3 */
+#div03 {
+    width: 80%;
+    margin: auto;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border: 1px solid black;
+}
+#div03 ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    padding: 20px;
+}
+#div03 ul li {
+    display: inline;
+    padding: 20px;
+}
+/* España */
+#España {
+    width: fit-content;
+    padding: 30px;
+    background: linear-gradient(red 0%, red 25%, yellow 25%, yellow 75%, red 75%, red 100%)
+}
+#Vox {
+    text-align: center;
+    color: white;
+    background-color: green;
+    padding: 10px;
+    border: 5px solid red;
+}
+#Dios {
+    float: right;
+    vertical-align: center;
+}
+/* Menú 4 */
+#div04 {
+    width: 80%;
+    margin: auto;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border: 1px solid black;
+}
+#div04 ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    overflow: visible;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+#div04 ul>li {
+    padding: 20px;
+    margin: 0.125em;
+    position: relative;
+}
+#div04 ul li ul {
+    visibility: hidden;
+    display: none;
+    position: absolute;
+    left: 13px;
+    top: 60px;
+    background: linear-gradient(160deg, grey 0%, white 100%)
+}
+#div04 ul li ul li {
+    display: block;
+    text-align: left;
+    padding: 5px;
+}
+#li01:hover #ul01 {
+    display: block;
+    visibility: visible;
+}
+#li02:hover #ul02 {
+    display: block;
+    visibility: visible;
+}
+#li03:hover #ul03 {
+    display: block;
+    visibility: visible;
+}
+#li04:hover #ul04 {
+    display: block;
+    visibility: visible;
+}
+#li05:hover #ul05 {
+    display: block;
+    visibility: visible;
+}
+/* Menú 5 */
+#div05 {
+    width: 80%;
+    margin: auto;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border: 1px solid black;
+}
+#div05 ul li {
+    list-style-type: none;
+    background-image: url(../Img/letter-m-icon-png-9.png);
+    background-repeat: no-repeat;
+	background-position: right center;
+    background-size: 1.5em;
+}
+#div05h1 {
+    width:  20%;
+    min-width: 130px;
+    margin: auto;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border: 1px solid black;
+    float: left;
+}
+#div05h2 {
+    width:  20%;
+    min-width: 130px;
+    margin: auto;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border: 1px solid black;
+    float: right;
+}
+#div05h3 {
+    width:  20%;
+    min-width: 130px;
+    margin: auto;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border: 1px solid black;
+}
+/* Menú 6 */
+#div06 {
+    width: 80%;
+    margin: auto;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border: 1px solid black;
+    text-align: center;
+}
+/* Menú 7 (fixed) */
+#div07 {
+    width: 2em;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border: 1px solid black;
+    position: sticky;
+    top: 10px;
+    bottom: 40px;
+    float: left;
+}
+#div07 img {
+    display: block;
+    margin: auto;
+}
+/* Menú 8 */
+#div08 {
+    width: 80%;
+    margin: auto;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border: 1px solid black;
+    text-align: center;
+}
+.div08h {
+    border: 1px solid black;
+    display: inline-block;
+    position: relative;
+}
+.div08hh1 {
+    border: 1px solid black;
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    left: -61px;
+    top: 55px;
+    width: 170px;
+}
+.div08hh2 {
+    border: 1px solid black;
+    display: inline-block;
+    position: relative;
+}
+.div08hhh1 {
+    border: 1px solid black;
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    left: -61px;
+    top: 55px;
+    width: 170px;
+}
+.div08hhh2 {
+    border: 1px solid black;
+    display: inline-block;
+    position: relative;
+}
+.div08hhhh1 {
+    border: 1px solid black;
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    left: -61px;
+    top: 55px;
+    width: 170px;
+}
+.div08h:hover .div08hh1 {
+    display: inline-block;
+    visibility: visible;
+}
+.div08hh2:hover .div08hhh1 {
+    display: inline-block;
+    visibility: visible;
+}
+.div08hhh2:hover .div08hhhh1 {
+    display: inline-block;
+    visibility: visible;
+}
+#div08 img {
+    display: inline-block;
+}

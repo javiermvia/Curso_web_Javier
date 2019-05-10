@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Borders</title>
+    <link rel="stylesheet" href="../CSS/Borders.css">
+</head>
+<body>
+        <h1>CSS <span>Borders</span></h1>
+        <hr>
+        <h2>CSS Border Properties</h2>
+        <p>The CSS <code>border</code> properties allow you to specify the style, width, and color of an element's border.</p>
+        <div class="ex01">
+        <p>I have borders on all sides.</p>
+        </div>
+        <br>
+        <div class="ex02">
+        <p>I have a red bottom border.</p>
+        </div>
+        <br>
+        <div class="ex03">
+        <p>I have rounded borders.</p>
+        </div>
+        <br>
+        <div class="ex04">
+        <p>I have a blue left border.</p>
+        </div>
+        <hr>
+        
+        <h2>Border Style</h2>
+        <p>The <code>border-style</code> property specifies what kind of border to display.</p>
+        <p>The following values are allowed:</p>
+        <ul>
+        <li><code>dotted</code> - Defines a dotted border</li>
+        <li><code>dashed</code> - Defines a dashed border</li>
+        <li><code>solid</code> - Defines a solid border</li>
+        <li><code>double</code> - Defines a double border</li>
+        <li><code>groove</code> - Defines a 3D grooved border. The effect depends on the border-color value</li>
+        <li><code>ridge</code> - Defines a 3D ridged border. The effect depends on the border-color value</li>
+        <li><code>inset</code> - Defines a 3D inset border. The effect depends on the border-color value</li>
+        <li><code>outset</code> - Defines a 3D outset border. The effect depends on the border-color value</li>
+        <li><code>none</code> - Defines no border</li>
+        <li><code>hidden</code> - Defines a hidden border</li>
+        </ul>
+        
+        <p>The <code>border-style</code> property can have from one to four values (for 
+        the top border, right border, bottom border, and the left border).</p>
+        
+        <div class="softgray">
+            <h3>Example</h3>
+            <div class="ex00">
+                <span style="color:brown">p.dotted <span style="color:black">{</span><span style="color:red">border-style<span style="color:mediumblue"><span style="color:black">:</span> dotted<span style="color:black">;</span></span></span><span style="color:black">}</span><br>p.dashed 
+                <span style="color:black">{</span><span style="color:red">border-style<span style="color:mediumblue"><span style="color:black">:</span> dashed<span style="color:black">;</span></span></span><span style="color:black">}</span><br>p.solid <span style="color:black">{</span><span style="color:red">border-style<span style="color:mediumblue"><span style="color:black">:</span> solid<span style="color:black">;</span></span></span><span style="color:black">}</span><br>p.double 
+                <span style="color:black">{</span><span style="color:red">border-style<span style="color:mediumblue"><span style="color:black">:</span> double<span style="color:black">;</span></span></span><span style="color:black">}</span><br>p.groove <span style="color:black">{</span><span style="color:red">border-style<span style="color:mediumblue"><span style="color:black">:</span> groove<span style="color:black">;</span></span></span><span style="color:black">}</span><br>p.ridge 
+                <span style="color:black">{</span><span style="color:red">border-style<span style="color:mediumblue"><span style="color:black">:</span> ridge<span style="color:black">;</span></span></span><span style="color:black">}</span><br>p.inset <span style="color:black">{</span><span style="color:red">border-style<span style="color:mediumblue"><span style="color:black">:</span> inset<span style="color:black">;</span></span></span><span style="color:black">}</span><br>p.outset 
+                <span style="color:black">{</span><span style="color:red">border-style<span style="color:mediumblue"><span style="color:black">:</span> outset<span style="color:black">;</span></span></span><span style="color:black">}</span><br>p.none <span style="color:black">{</span><span style="color:red">border-style<span style="color:mediumblue"><span style="color:black">:</span> none<span style="color:black">;</span></span></span><span style="color:black">}</span><br>p.hidden <span style="color:black">{</span><span style="color:red">border-style<span style="color:mediumblue"><span style="color:black">:</span> hidden<span style="color:black">;</span></span></span><span style="color:black">}</span><br>
+                p.mix <span style="color:black">{</span><span style="color:red">border-style<span style="color:mediumblue"><span style="color:black">:</span> dotted dashed solid double<span style="color:black">;</span></span></span><span style="color:black">}</span> </span>
+            </div>
+            <p>Result:</p>
+            <div>
+            <p style="border-style: dotted;">A dotted border.</p>
+            <p style="border-style: dashed;">A dashed border.</p>
+            <p style="border-style: solid;">A solid border.</p>
+            <p style="border-style: double;">A double border.</p>
+            <p style="border-style: groove;">A groove border. The effect depends on the border-color value.</p>
+            <p style="border-style: ridge;">A ridge border. The effect depends on the border-color value.</p>
+            <p style="border-style: inset;">An inset border. The effect depends on the border-color value.</p>
+            <p style="border-style: outset;">An outset border. The effect depends on the border-color value.</p>
+            <p style="border-style: none;">No border.</p>
+            <p style="border-style: hidden;">A hidden border.</p>
+            <p style="border-style: dotted dashed solid double;">A mixed border.</p>
+            </div>
+        </div>
+        <div class="note">
+          <p><b>Note:</b> None of the OTHER CSS border properties described below will have ANY effect unless the 
+        <code>border-style</code> property is set!</p>
+        </div>
+        <h2>Border Width</h2>
+        <p>The <code>border-width</code> property specifies the width of the four borders.</p>
+        <p>The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined values: 
+        thin, medium, or thick.</p>
+        <p>The <code>border-width</code> property can have from one to four values (for 
+        the top border, right border, bottom border, and the left border).</p>
+        
+        <div style="border:5px solid black;padding:8px;">5px border-width</div>
+        <div class="softgray">
+            <h3>Example</h3>
+            <div class="ex00">
+                <span style="color:brown">p.one<span style="color:black">{</span><span style="color:red"><br>
+                &nbsp;
+                border-style<span style="color:mediumblue"><span style="color:black">:</span> solid<span style="color:black">;</span></span><br>
+                &nbsp;
+                border-width<span style="color:mediumblue"><span style="color:black">:</span> 5px<span style="color:black">;</span></span><br>
+                </span><span style="color:black">}</span><br><br>
+                p.two
+                <span style="color:black">{</span><span style="color:red"><br>
+                &nbsp;
+                border-style<span style="color:mediumblue"><span style="color:black">:</span> solid<span style="color:black">;</span></span><br>
+                &nbsp;&nbsp;border-width<span style="color:mediumblue"><span style="color:black">:</span> medium<span style="color:black">;</span></span><br>
+                </span><span style="color:black">}</span><br><br>p.three
+                <span style="color:black">{</span><span style="color:red"><br>
+                &nbsp;
+                border-style<span style="color:mediumblue"><span style="color:black">:</span> solid<span style="color:black">;</span></span><br>
+                &nbsp;&nbsp;border-width<span style="color:mediumblue"><span style="color:black">:</span> 2px 10px 4px 20px<span style="color:black">;</span></span><br>
+                </span><span style="color:black">}</span>
+                </span>
+            </div>
+        </div>
+        <hr>
+        
+        <h2>Border Color</h2>
+        <p>The <code>border-color</code> property is used to set the color of the four borders.</p>
+        <p>The color can be set by:</p>
+        <ul>
+        <li>name - specify a color name, like "red"</li>
+        <li>Hex - specify a hex value, like "#ff0000"</li>
+        <li>RGB - specify a RGB value, like "rgb(255,0,0)"</li>
+        <li>transparent</li>
+        </ul>
+        <p>The <code>border-color</code> property can have from one to four values (for 
+        the top border, right border, bottom border, and the left border).&nbsp;</p>
+        <p>If <code>border-color</code> is not set, it inherits the color of the element.</p>
+        <div style="border:5px solid red;padding:8px;">Red border</div>
+        
+        <div class="softgray">
+            <h3>Example</h3>
+            <div class="ex00">
+                <span style="color:brown">
+                p.one
+                <span style="color:black">{</span><span style="color:red"><br>
+                &nbsp;
+                border-style<span style="color:mediumblue"><span style="color:black">:</span> solid<span style="color:black">;</span></span><br>
+                &nbsp;
+                border-color<span style="color:mediumblue"><span style="color:black">:</span> red<span style="color:black">;</span></span><br>
+                </span><span style="color:black">}</span><br><br>
+                p.two
+                <span style="color:black">{</span><span style="color:red"><br>
+                &nbsp;
+                border-style<span style="color:mediumblue"><span style="color:black">:</span> solid<span style="color:black">;</span></span><br>
+                &nbsp;&nbsp;border-color<span style="color:mediumblue"><span style="color:black">:</span> green<span style="color:black">;</span></span><br>
+                </span><span style="color:black">}</span><br><br>p.three <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;border-style<span style="color:mediumblue"><span style="color:black">:</span> solid<span style="color:black">;</span></span><br>&nbsp;&nbsp;border-color<span style="color:mediumblue"><span style="color:black">:</span> red green blue yellow<span style="color:black">;</span></span><br></span><span style="color:black">}</span> </span>
+            </div>
+        </div>
+        <hr>
+        
+        <h2>Border - Individual Sides</h2>
+        <p>From the examples above you have seen that it is possible to specify a 
+        different border for each side.</p>
+        <p>In CSS, there are also properties for specifying each of the borders (top, 
+        right, bottom, and left):</p>
+        
+        <div style="border-style: dotted solid;padding:8px;">Different Border Styles</div>
+        
+        <div class="softgray">
+            <h3>Example</h3>
+            <div class="ex00">
+                <span style="color:brown">
+                p
+                <span style="color:black">{</span><span style="color:red"><br>
+                &nbsp;
+                border-top-style<span style="color:mediumblue"><span style="color:black">:</span> dotted<span style="color:black">;</span></span><br>
+                &nbsp;
+                border-right-style<span style="color:mediumblue"><span style="color:black">:</span> solid<span style="color:black">;</span></span><br>
+                &nbsp;&nbsp;border-bottom-style<span style="color:mediumblue"><span style="color:black">:</span> dotted<span style="color:black">;</span></span><br>
+                &nbsp;&nbsp;border-left-style<span style="color:mediumblue"><span style="color:black">:</span> solid<span style="color:black">;</span></span><br>
+                </span><span style="color:black">}</span> </span>
+            </div>
+        </div>
+        <p>The example above gives the same result as this:</p>
+        <div class="softgray">
+            <h3>Example</h3>
+            <div class="ex00">
+                <span style="color:brown">
+                p <span style="color:black">{</span><span style="color:red"><br>&nbsp;
+                border-style<span style="color:mediumblue"><span style="color:black">:</span> dotted solid<span style="color:black">;</span></span><br></span><span style="color:black">}</span> </span>
+            </div>
+        </div>
+        
+        <p>So, here is how it works:</p>
+        <p>If the <code>border-style</code> property has four values:</p>
+        <ul>
+        <li><b>border-style: dotted solid double dashed; </b>
+        <ul><li>top border is dotted</li>
+        <li>right border is solid</li>
+        <li>bottom border is double</li>
+        <li>left border is dashed</li>
+        </ul>
+        </li>
+        </ul>
+        <p>If the <code>border-style</code> property has three values:</p>
+        <ul>
+        <li><b>border-style: dotted solid double;</b>
+        <ul><li>top border is dotted</li>
+        <li>right and left borders are solid</li>
+        <li>bottom border is double</li></ul>
+        </li>
+        </ul>
+        <p>If the <code>border-style</code> property has two values:</p>
+        <ul>
+        <li><b>border-style: dotted solid;</b>
+        <ul><li>top and bottom borders are dotted</li>
+        <li>right and left borders are solid</li></ul>
+        </li>
+        </ul>
+        <p>If the <code>border-style</code> property has one value:</p>
+        <ul>
+        <li><b>border-style: dotted;</b><ul><li>all four borders are dotted</li></ul>
+        </li>
+        </ul>
+        <p>The <code>border-style</code> property is used in the example above. However, it also works with 
+        <code>border-width</code> 
+        and <code>border-color</code>.</p>
+        <hr>
+        
+        <h2>Border - Shorthand Property</h2>
+        <p>As you can see from the examples above, there are many properties to consider when dealing with borders.</p>
+        <p>To shorten the code, it is also possible to specify all the individual border properties in 
+        one property.</p>
+        <p>The <code>border</code> property is a shorthand property for the following individual border properties:</p>
+        <ul>
+        <li><code>border-width</code></li>
+        <li><code>border-style</code> (required)</li>
+        <li><code>border-color</code></li>
+        </ul>
+        <div class="softgray">
+            <h3>Example</h3>
+            <div class="ex00">
+                <span style="color:brown">
+                p <span style="color:black">{</span><span style="color:red"><br>&nbsp;
+                border<span style="color:mediumblue"><span style="color:black">:</span> 5px solid red<span style="color:black">;</span></span><br></span><span style="color:black">}</span> </span>
+            </div>
+            <p>Result:</p>
+            <div>
+            <p style="border:5px solid red;padding:2px">Some text</p>
+            </div>
+        </div>
+        
+        <p>You can also specify all the individual border properties for just one side:</p>
+        <div>
+        <h3>Left Border</h3>
+        <div><span style="color:brown">
+        p <span style="color:black">{</span><span style="color:red"><br>&nbsp;
+        border-left<span style="color:mediumblue"><span style="color:black">:</span> 6px solid red<span style="color:black">;</span></span><br>&nbsp;&nbsp;background-color<span style="color:mediumblue"><span style="color:black">:</span> lightgrey<span style="color:black">;</span></span><br></span><span style="color:black">}</span> </span></div>
+        <p>Result:</p>
+        <div>
+        <p style="border-left:6px solid red;padding:5px 5px;background-color:lightgrey">Some text</p>
+        </div></div>
+        
+        <div>
+        <h3>Bottom Border</h3>
+        <div><span style="color:brown">
+        p <span style="color:black">{</span><span style="color:red"><br>&nbsp;
+        border-bottom<span style="color:mediumblue"><span style="color:black">:</span> 6px solid red<span style="color:black">;</span></span><br>&nbsp; background-color<span style="color:mediumblue"><span style="color:black">:</span> lightgrey<span style="color:black">;</span></span><br></span><span style="color:black">}</span> </span></div>
+        <p>Result:</p>
+        <div>
+        <p style="border-bottom:6px solid red;padding:5px 5px;background-color:lightgrey">Some text</p>
+        </div></div>
+        
+        <hr>
+        
+        <h2>Rounded Borders</h2>
+        <p>The <code>border-radius</code> property is used to add rounded borders to an element:</p>
+        <p style="border: 2px solid red;padding:2px;">Normal border</p>
+        <p style="border: 2px solid red;border-radius: 5px;padding:2px;">Round border</p>
+        <p style="border: 2px solid red;border-radius: 8px;padding:2px;">Rounder border</p>
+        <p style="border: 2px solid red;border-radius: 12px;padding:2px;">Roundest border</p>
+        <p style="border: 2px solid red;border-radius: 0px 4px 8px 12px;padding:2px;">Custom borders</p>
+        
+        <div class="softgray">
+            <h3>Example</h3>
+            <div class="ex00">
+                <span style="color:brown">
+                p <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;border<span style="color:mediumblue"><span style="color:black">:</span> 2px solid red<span style="color:black">;</span></span><br>&nbsp;&nbsp;border-radius<span style="color:mediumblue"><span style="color:black">:</span> 5px<span style="color:black">;</span></span><br></span><span style="color:black">}</span> </span>
+            </div>
+        </div>
+        <div class="note"><p><strong>Note:</strong> The <code>border-radius</code> property is not supported in IE8 and earlier versions.</p></div>
+
+</body>
+</html>

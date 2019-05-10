@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="../CSS/1-Formulario_contacto.css">
+</head>
+<body>
+    <h1>Formulario de contacto</h1>
+    <form action="../PHP/action_page.php" target="_blank" method="POST">
+    <p>Nombre <span>*</span></p>
+    <p><input name="Nombre" type="text" placeholder="Nombre" pattern="[A-Za-z]{3,20}" title="3 letter min 20 max from a to z or A to Z" required></p>
+    <p>Apellidos <span>*</span></p>
+    <p><input name="Apellidos" type="text" placeholder="Apellidos" pattern="[A-Za-z]{3-10}+[/s]+[A-Za-z]{3-10}" title="Each surname can have 3 letter min 20 max from a to z or A to Z" required></p>
+    <p>Teléfono <span>*</span></p>
+    <p><input name="Teléfono" type="text" placeholder="Teléfono" pattern="[1-9]{9}" maxlength="9" title="Your number must have 9 characters, only numbers (dont include +34)" required></p>
+    <p>Correo Electrónico <span>*</span></p>
+    <p><input name="Correo" type="text" placeholder="Correo Electrónico" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></p>
+    <p>Consulta <span>*</span></p>
+    <p><textarea name="Consulta" id="Consulta" placeholder="Escribe aquí tu consulta..."></textarea></p>
+    <p><input type="checkbox" title="Es necesario que leas nuestros términos y condiciones" required>Acepto los términos y <a href="">condiciones de privacidad.</a></p>
+    <br>
+    <input type="submit">
+    </form>
+</body>
+</html>

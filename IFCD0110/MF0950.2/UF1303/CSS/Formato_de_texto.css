@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+div.body {
+    background: url(../Img/Formato_de_texto/textura.jpg) ;
+    min-width: 1100px;
+}
+div.main {
+    width: 80%;
+    margin: 50px auto;
+    background: url(../Img/Formato_de_texto/libreta-espiral.gif) repeat-y;
+    background-position: top left;
+    padding: 10px 10%;
+    text-align: center;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+h1, h2 {
+    border-bottom: 10px groove red;
+    background-color: lightgoldenrodyellow;
+    font-variant: small-caps;
+}
+div.img {
+    overflow: hidden;
+    margin-bottom: -50px;
+}
+img.red {
+    float: right;
+    display: block;
+    visibility: visible;
+}
+img.blue {
+    float: right;
+    display: none;
+    visibility: hidden;
+}
+img.green {
+    float: right;
+    display: none;
+    visibility: hidden;
+}
+a.red:active {
+    display: none;
+    visibility: hidden;
+}
+a.red:active img.red {
+    display: none;
+    visibility: hidden;
+}
+a.red:active + img.blue {
+    display: block;
+    visibility: visible;
+}
+a.blue:active {
+    display: none;
+    visibility: hidden;
+}
+a.blue:active img.blue {
+    display: none;
+    visibility: hidden;
+}
+img.blue:active + img.green {
+    display: block;
+    visibility: visible;
+}
+a.green:active {
+    display: none;
+    visibility: hidden;
+}
+a.green:active img.green {
+    display: none;
+    visibility: hidden;
+}
+div.p-m1 {
+    overflow: hidden;
+    width: fit-content;
+    margin: auto;
+    background-color: lightgoldenrodyellow;
+    padding: 10px;
+}
+div.h-m1-1 {
+    float: left;
+    padding: 8px 40px;
+    color: white;
+    background-color: darkred;
+    border-right: 1px solid yellow;
+}
+div.h-m1-2 {
+    float: left;
+    padding: 8px 40px;
+    color: white;
+    background-color: darkred;
+}
+div.h-m1-3 {
+    float: left;
+    padding: 8px 40px;
+    color: white;
+    background-color: darkred;
+    border-left: 1px solid yellow;
+}
+div.p-m2 {
+    overflow: hidden;
+    width: fit-content;
+    margin: auto;
+    background-color: lightgoldenrodyellow;
+    padding: 10px;
+    text-align: justify;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5)
+}
+div.h-m2-1 {
+    border-left: 3px solid darkred;
+    padding: 2px 15px;
+    margin: 15px 10px;
+    background-color: rgba(218, 165, 32, 0.3);
+}
+div.h-m2-2 {
+    padding: 8px 40px;
+    color: white;
+    background-color: darkred;
+    width: fit-content;
+    margin: 15px 10px;
+}
+div.h-m2-2 a {
+    text-decoration: none;
+    color: white;
+}
+p.p1 {
+    font-size: medium
+}
+p.p2 {
+    font-size: large
+}
+p.p3 {
+    font-size: larger
+}
+p.p4 {
+    font-size: x-large
+}
+hr {
+    width: 20%;
+    border: 0px solid goldenrod;
+    height: 7px;
+    background: radial-gradient(ellipse, goldenrod 40%, white 60%)
+}
+div.footer {
+    overflow: hidden;
+    margin: auto;
+    background-color: lightgoldenrodyellow;
+    margin-top: 25px;
+    padding: 0px 15px;
+    text-align: justify;
+    border: 1px dotted red;
+    font-size: large;
+    text-align: center;
+}

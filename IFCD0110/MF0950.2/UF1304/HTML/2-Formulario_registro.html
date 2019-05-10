@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="../CSS/2-Formulario_registro.css">
+</head>
+<body>
+    <figure>
+        <img src="../Img/img_avatar.png" alt="avatar1">
+    </figure>
+    <form action="../PHP/action_page.php" target="_blank" method="POST">
+        <p><b>Usuario</b></p>
+        <p><input name="user" type="text" placeholder="Nombre de usuario" pattern="[\S]{8,30}" title="min 8 max 30" required></p>
+        <p><b>Contraseña</b></p>
+        <p><input name="password" type="password" placeholder="Contraseña" pattern="[\S]{8,30}" title="min 8 max 30" required></p>
+        <input type="submit" value="Iniciar sesión">
+        <p><input type="checkbox"> Recordarme.</p>
+    </form>
+    <div>
+        <a href=""><button>Registrarse</button></a>
+        <span>¿Has olvidado la <a href="">contraseña</a>?</span>
+    </div>
+    <figure>
+        <img src="../Img/img_avatar2.png" alt="avatar1">
+    </figure>
+    <form action="../PHP/action_page.php" target="_blank" method="POST">
+        <p><b>Usuario</b></p>
+        <p><input name="user" type="text" placeholder="Nombre de usuario" pattern="[\S]{8,30}" title="min 8 max 30" required></p>
+        <p><b>Contraseña</b></p>
+        <p><input name="password" type="password" placeholder="Contraseña" pattern="[\S]{8,30}" title="min 8 max 30" required></p>
+        <input type="submit" value="Iniciar sesión">
+        <p><input type="checkbox"> Recordarme.</p>
+    </form>
+    <div>
+        <a href=""><button>Registrarse</button></a>
+        <span>¿Has olvidado la <a href="">contraseña</a>?</span>
+    </div>
+</body>
+</html>

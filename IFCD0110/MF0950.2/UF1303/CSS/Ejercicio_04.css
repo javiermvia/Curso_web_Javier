@@ -1,0 +1,238 @@
+/* General */
+* {
+    margin: 0px;
+    padding: 0px;
+/*     border: 1px solid black; */
+}
+body {
+    width: 94%;
+    margin: auto;
+}
+h1 {
+    line-height: 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+a {
+    text-decoration: none;
+    color: rgb(100, 100, 100);
+    margin: 10px;
+}
+/* Menú viajes */
+.he-divp1 {
+    background-image: url(../Img/ejercicio4/logo.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: dodgerblue;
+    color: white;
+    text-align: right;
+    align-items: baseline;
+    padding-left: 160px;
+}
+.he-navp1 ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: navy;
+}
+.he-navp1 li {
+    display: flex;
+    background-color: navy;
+    padding: 0.5em;
+}
+.he-navp2 ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.he-navp2 li {
+    display: flex;
+    padding: 0.5em;
+    font-size: 1.3em;
+}
+/* Playa */
+.he-divp2 {
+    background-image: url(../Img/ejercicio4/foto-playa.jpg);
+    background-repeat: no-repeat;
+    background-size: 1920px;
+    width: 100%;
+    height: 600px;
+    text-align: left;
+    position: relative;
+    border-bottom: 3px solid yellow;
+}
+.he-divh1 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-top: 3px solid yellow;
+    float: right;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    padding: 10px;
+}
+.he-divh1 h2 {
+    margin: 10px;
+    font-size: 2.5em;
+}
+.he-divh1 p {
+    margin: 10px;
+    font-size: 1.5em;
+}
+.he-divh1 a {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 6px;
+    font-size: 1em;
+}
+sub {
+    vertical-align: baseline;
+    font-size: 0.7em;
+    font-style: oblique;
+}
+/* Fin playa */
+main>div {
+    overflow: hidden;
+    color: aqua;
+}
+span {
+    font-size: 18px;
+    color: rgb(100, 100, 100);
+}
+main img {
+    width: 100%;
+    filter: brightness(100%)
+}
+main img:hover {
+    filter: brightness(110%)
+}
+main>div div {
+    text-align: right;
+}
+main>div>div {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    position: relative;
+}
+.boton {
+    display: block;
+    text-align: right;
+    padding: 18px;
+}
+.boton>a {
+    color: white;
+    background-color: aqua;
+    padding: 8px;
+    line-height: 2em;
+}
+main>div>div>div {
+    border-bottom: 1px solid rgb(100, 100, 100);
+}
+main figure {
+    position: relative;
+}
+main figcaption {
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+.ma-p1>div>div {
+    width: 400px;
+}
+.ma-p2>div>div {
+    width: 300px;
+}
+.ma-p3>div>div {
+    width: 635px;
+}
+/* footer */
+footer {
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: aqua;
+    color: white;
+}
+footer>div {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: auto;
+}
+footer>div>figure+img+p {
+    display: flex;
+    flex-wrap: nowrap;
+}
+footer figure {
+    text-align: center;
+}
+.foo-p1 {
+    display: block;
+    text-align: center;
+    height: 0.5em;
+    border-bottom: 2px solid white;
+    margin-bottom: 0.5em;
+    background-color: aqua;
+    padding-top: 10px;
+}
+.foo-p1::first-line {
+    background-color: aqua;
+}
+.foo-p2 {
+    background-color: aqua;
+    padding-bottom: 10px;
+}
+.foo-p3 {
+    background-color: white;
+    padding: 10px;
+}
+.foo-p4 {
+    background-color: rgb(50, 50, 50);
+    padding: 10px;
+}
+/* Media */
+@media screen and (max-width: 700px) {
+    body {
+        background: radial-gradient(ellipse at center 500%, white 50%, white, black);
+    }
+    .he-navp1 ul {
+        overflow: hidden;
+        flex-direction: column;
+    }
+    .he-navp1 li {
+        min-width: 40px;
+    }
+    .he-navp2 ul {
+        overflow: hidden;
+        flex-direction: column;
+        border-left:  2px dotted white;
+    }
+    .he-navp2 li {
+        min-width: 40px;
+    }
+    /* Playa */
+    .he-divp2 {
+        height: 400px;
+    }
+    /* Fin playa */
+    main>div>div {
+        flex-direction: column;
+    }
+    .ma-p1>div>div {
+        width: 100%;
+    }
+    .ma-p2>div>div {
+        width: 100%;
+    }
+    .ma-p3>div>div {
+        width: 100%;
+    }
+    /* footer */
+}

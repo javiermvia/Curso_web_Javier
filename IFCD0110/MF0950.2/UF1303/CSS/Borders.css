@@ -1,0 +1,39 @@
+body {
+    width: 90%;
+    margin: auto;
+}
+div {
+    padding: 10px;
+}
+div.ex01 {
+    border: 1px solid black;
+}
+div.ex02 {
+    border-bottom: 1px solid red;
+}
+div.ex03 {
+    border: 1px solid gray;
+    border-radius: 15px;
+}
+div.ex04 {
+    border-left: 2px solid blue;
+    background-color: lightblue;
+}
+div.softgray {
+    background-color: rgba(0, 0, 0, 0.150);
+    border-collapse: separate;
+    margin: 3px;
+    padding: 3px;
+}
+div.note {
+    background-color: rgba(220, 160, 20, 0.300);
+    border: 2px solid rgb(220, 160, 20);
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+div.ex00 {
+    border-left: 2px solid green;
+    background-color: white;
+}

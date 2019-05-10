@@ -1,0 +1,29 @@
+nav ol, nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/* los a que esten dentro de un nav tienen el estilo siguiente (en este caso ninguno) y tienen un borde de un pixel */
+nav a {
+    text-decoration: none;
+    color: inherit;
+    /*Hasta aquí el estilo "none" y color predefinido.*/
+    display: block;
+    padding: 0,5rem 1rem;
+    border: 1px solid;
+}
+/*dentro del nav los li estarán horizontal, conseguimos una lista horizontal en lugar de vertical, ya que el display normal de li (listas) es "block" es decir, saltando a la linea siguiente.*/
+nav li {
+    display: inline-block
+}
+/*La parte body>.. es para que solo se aplique al primer header y al primer footer*/
+body>header, footer {
+    background-color: antiquewhite;
+    color: blue;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+body {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}

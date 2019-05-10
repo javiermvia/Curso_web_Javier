@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nuevo Profesor</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <script src="js/funciones.js" type="text/javascript"></script>
+    <meta name="keywords" content="HTML, CSS, XML, JavaScript">
+    <meta name="author" content="Javier el Grande">
+    <meta name="description" content="Diseño de páginas web con HTML, CSS, XML, JavaScript.">
+    <meta name="title" content="Confección y publicación de páginas Web">
+    <meta http-equiv="refresh" content="30">
+    <!--<base href="https://www.mipagina.com/img" target="blank">-->
+    <!--vemos dos posibilidades, la primera es la que nos enseñó Alejandro Cerezo, y la segunda la que nos ha enseñado Francisco-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./Img/favicon0.png" type="image/png">
+    <style>
+        table, th, td {border: 1px solid black;}
+        div {border-collapse: separate;
+            margin: 2px;
+            padding: 2px;}
+        .softgray {background-color: rgba(0, 0, 0, 0.150);
+            border-collapse: separate;
+            margin: 3px;
+            padding: 3px;}
+        .tip {background-color: rgba(220, 160, 20, 0.300);
+            border: 2px solid rgb(220, 160, 20);
+            margin-top: 16px;
+            margin-bottom: 16px;
+            margin-left: 4px;
+            margin-right: 4px;}
+        body {font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 90%;
+            margin: 0 auto}
+        h1 {font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif}
+        h2, h3 {font-family: fantasy}
+        hr {border: 2px solid rgb(220, 160, 20);
+            margin: 4px}
+        code {color: chartreuse}
+        .HTMLtags {background-color: rgba(25, 0, 255, 0.500);
+            border: 2px solid rgb(10, 8, 88);
+            margin: 4px;
+            padding: 4px;
+            font-size: 20px}
+        code span {color: mediumblue;}
+        code span span {color: brown}
+        code span span span {color: crimson}
+        .dotted {border-style: dotted}
+    </style>
+</head>
+<body>
+    <div>
+        <h1>HTML Introduction</h1>
+        <hr class="dotted">
+        <li><a href="/IFCD0110/MF0950.2/UF1302/Prácticas/Indice.html">Home</a></li>
+        <h2>What is HTML?</h2>
+            <p> HTML is the standard markup language for creating Web pages.</p>
+            <ul>
+                <li>HTML stands for Hyper Text Markup Language</li>
+                <li>HTML describes the structure of Web pages using markup</li>
+                <li>HTML elements are the building blocks of HTML pages</li>
+                <li>HTML elements are represented by tags</li>
+                <li>HTML tags label pieces of content such as "heading", "paragraph", "table", and so on</li>
+                <li>Browsers do not display the HTML tags, but use them to render the content of the page</li>
+            </ul>
+    </div>
+    <div>
+        <h2>Basic Structure of an HTML document</h2>
+        <code>
+            <span>&lt;<span>!DOCTYPE <span> html</span></span>&gt;</span> <br>
+            <span>&lt;<span>html <span>lang="en"</span></span>&gt;</span><span>&lt;<span>/html</span>&gt;</span> <br>
+            <span>&lt;<span>html</span>&gt;</span> <br>
+            <span>&lt;<span>head</span>&gt;</span> <br>
+            <span>&lt;<span>meta charset="UTF-8"</span>&gt;</span> <br>
+            <span>&lt;<span>title</span>&gt;</span></code>Page Title<code><span>&lt;<span>/title</span>&gt;</span> <br>
+            <span>&lt;<span>/head</span>&gt;</span> <br>
+            <span>&lt;<span>body</span>&gt;</span> <br>
+            <span>&lt;<span>h1</span>&gt;</span></code>My First Heading<code><span>&lt;<span>/h1</span>&gt;</span> <br>
+            <span>&lt;<span>p</span>&gt;</span></code>My first paragraph.<code><span>&lt;<span>/p</span>&gt;</span> <br>
+            <span>&lt;<span>/body</span>&gt;</span> <br>
+            <span>&lt;<span>/html</span>&gt;</span> <br>
+        </code>      
+    </div>
+    <div>
+        <h3><p>Example Explained</p></h3> 
+            <ol>
+                <li> <code>The &lt;!DOCTYPE html&gt; declaration defines this document to be HTML5
+                </code> </li>
+                <li><code>The lang="en" declaration defines the language to be used by the browser</code></li>
+                <li> <code>The &lt;html&gt; element is the root element of an HTML page
+                </code> </li>
+                <li> <code>The &lt;head&gt; element contains meta information about the document
+                </code> </li>
+                <li><code>The &lt;charset&gt; element identifies a set of characters to be used by the browser</code></li>
+                <li> <code>The &lt;title&gt; element specifies a title for the document
+                </code> </li>
+                <li> <code>The &lt;body&gt; element contains the visible page content
+                </code> </li>
+                <li> <code>The &lt;h1&gt; element defines a large heading
+                </code> </li>
+                <li> <code>The &lt;p&gt; element defines a paragraph
+                </code> </li>
+            </ol>   
+    </div>
+    <div>
+        <h2>HTML Tags</h2>
+        <p>HTML tags are element names surrounded by angle brackets:</p>
+        <div class="HTMLtags">
+            <p><code>&lt;tagname&gt;content goes here...&lt;/tagname&gt;</code></p>
+        </div>
+        
+        <dl>
+            <dt><b>HTML tags:</b> </dt>
+            <dd>- Normally come in pairs like <code>&lt;p&gt;</code> and <code>&lt;/p&gt;</code></dd>
+            <dt><b>The first tag in a pair:</b> </dt>
+            <dd>-  Is the start tag, the second tag is the end tag</dd>
+            <dt><b>The end tag:</b> </dt>
+            <dd>-  Is written like the start tag, but with a forward slash inserted before the tag name</dd>
+        </dl>
+        <div class="tip">
+            <p>Tip: The start tag is also called the opening tag, and the end tag the closing tag.</p>
+        </div>
+    </div>
+    <div>
+        <h2>Web Browsers</h2>
+        <p>The purpose of a web browser (Chrome, IE, Firefox, Safari) is to read HTML documents and display them.<br>
+        The browser does not display the HTML tags, but uses them to determine how to display the document:</p>
+        <img src="/IFCD0110/MF0950.2/UF1302/Prácticas/Img/My_first_Heading.png" alt="Foto informativa complementaria al ejercicio, en la imagen pone: My first Heading" width="635" height="361">
+    </div>
+    <hr>
+    <div>
+        <h2>HTML Versions</h2>
+        <p>Since the early days of the web, there have been many versions of HTML:</p>
+        <table style="width: 50%; text-align: left; border: 1px solid  rgb(214, 36, 13)">
+            <tr>
+                <th>Version</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>1991</td>
+            </tr>
+            <tr>
+                <td>HTML 2.0</td>
+                <td>1995</td>
+            </tr>
+            <tr>
+                <td>HTML 3.2</td>
+                <td>1997</td>
+            </tr>
+            <tr>
+                <td>HTML 4.01</td>
+                <td>1999</td>
+            </tr>
+            <tr>
+                <td>XHTML</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td>HTML5</td>
+                <td>2014</td>
+            </tr>
+
+        </table>
+    </div>
+    <div>   
+        <h2>HTML Page Structure</h2> 
+        <p>Below is a visualization of an HTML page structure:</p> 
+        <div class="softgray">
+            <code>&lt;html&gt;</code>
+            <div class="softgray">
+                <code>&lt;head&gt;</code>
+                <div class="softgray">
+                    <code>&lt;title&gt;</code>Page title<code>&lt;/title&gt;</code>
+                </div>
+                <code>&lt;/head&gt;</code>
+            </div>
+            <div class="softgray">
+                <code>&lt;body&gt;</code>
+                <div class="softgray">
+                    <div class="softgray"><code>&lt;h1&gt;</code>This is a heading<code>&lt;/h1&gt;</code></div>
+                    <div class="softgray"><code>&lt;p&gt;</code>This is a paragraph.<code>&lt;/p&gt;</code></div>
+                    <div class="softgray"><code>&lt;p&gt;</code>This is another paragraph.<code>&lt;/p&gt;</code></div>
+                </div>
+                
+                <code>&lt;/body&gt;</code>
+            </div>
+            <code>&lt;/html&gt;</code>
+        </div>
+        <div class="tip">
+            <p>Note: Only the content inside the <body> section (the white area above) is displayed in a browser.</p>
+        </div>
+    </div>  
+    <a href="./Indice.html">Home</a>
+</body>
+</html>

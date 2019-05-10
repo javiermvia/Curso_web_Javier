@@ -1,0 +1,31 @@
+body {
+    width: 35%;
+    margin: auto;
+}
+form {
+    background-color: rgba(127, 255, 212, 0.1);
+    padding: 15px;
+}
+input[type=text] {
+    width: 100%;
+}
+input[type=text]:invalid {
+    background-color: rgba(255, 0, 0, 0.1);
+}
+input[type=text]:valid {
+    background-color: rgba(0, 128, 0, 0.1);
+}
+textarea {
+    width: 100%;
+    resize: vertical;
+}
+span {
+    color: red;
+}
+input[type=submit] {
+    background-color: rgb(62, 104, 0);
+    color: white;
+    padding: 10px;
+    border-radius: 5px
+
+}

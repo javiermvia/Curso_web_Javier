@@ -1,0 +1,15 @@
+* {
+    border: 1px solid black;
+}
+main {
+    width: 90%;
+    margin: auto;
+}
+div.cont {
+    padding: 10px;
+    margin: 10px;
+    overflow: hidden
+}
+button {
+    float: right;
+}

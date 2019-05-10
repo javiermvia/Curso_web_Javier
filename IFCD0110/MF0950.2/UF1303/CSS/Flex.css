@@ -1,0 +1,61 @@
+body {
+    background: linear-gradient(red 0%, red 25%, yellow 25%, yellow 75%, red 75%, red 100%);
+}
+main {
+    width: 90%;
+    background-color: white;
+    border: 1px solid red;
+    margin: auto;
+    min-height: 80%;
+}
+div.p1 {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row; /* linea o columna */
+    flex-wrap: wrap; /* se mantiene en la linea variando en ancho o salta a la siguiente manteniéndolo */
+    justify-content: space-evenly; /* horizontalmente */
+}
+div.p1 div {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+}
+div.p2 {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row; /* linea o columna */
+    flex-wrap: wrap; /* se mantiene en la linea variando en ancho o salta a la siguiente manteniéndolo */
+    justify-content: space-evenly; /* horizontalmente */
+}
+div.p2 div {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    width: 150px;
+}
+@media screen and (max-width: 1000px) {
+    body {
+        background: radial-gradient(ellipse at center 500%, white 50%, white, black);
+    }
+    div.p2 div {
+        border: 1px solid black;
+        padding: 5px;
+        margin: 5px;
+        display: flex;
+        width: 190px;
+    }
+}
+@media screen and (max-width: 500px) {
+    body {
+        background: repeating-linear-gradient(60deg , yellow 0px, yellow 20px, black 20px, black 25px);
+    }
+    div.p2 div {
+        border: 1px solid black;
+        padding: 5px;
+        margin: 5px;
+        display: flex;
+        width: 100%;
+    }
+}

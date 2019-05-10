@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RedBall</title>
+    <link rel="stylesheet" href="../css/estilo_basico.css">
+    <link rel="icon" href="/Necesarios/favicon0.png" type="x-icon/image">
+    <style>
+        main {
+            height: 1000px;
+        }
+        #red {
+            background-color: red;
+            width:100px;
+            height:100px;
+            border-radius:50%;
+            top: 50px;
+            left: 50px;
+            position:absolute;
+        }
+        #blue {
+            background-color: blue;
+            width:100px;
+            height:100px;
+            border-radius:50%;
+            top: 100px;
+            left: 50px;
+            position:absolute;
+        }
+        #green {
+            background-color: green;
+            width:100px;
+            height:100px;
+            border-radius:50%;
+            top: 150px;
+            left: 50px;
+            position:absolute;
+        }
+        #orange {
+            background-color: orange;
+            width:100px;
+            height:100px;
+            border-radius:50%;
+            top: 200px;
+            left: 50px;
+            position:absolute;
+        }
+        #black {
+            background-color: black;
+            width:100px;
+            height:100px;
+            border-radius:50%;
+            top: 250px;
+            left: 50px;
+            position:absolute;
+        }
+    </style>
+    <script>
+
+        /* PRUEBAS */
+        function pruebas() {
+            var dato1 = document.getElementById("pruebas").innerHTML;
+            var dato2 = "qwer";
+
+            console.log ("dato1: " + dato1 + "\n typeof dato1: " + typeof(dato1) + "\n isNaN: " + isNaN(dato1) + "\n isInteger: " + Number.isInteger(dato1) + "\n isFinite: " + isFinite(dato1) + "\ndato2: " + dato2 + "\n typeof dato2: " + typeof(dato2) + "\n isNaN: " + isNaN(dato2) + "\n isInteger: " + Number.isInteger(dato2) + "\n isFinite: " + isFinite(dato2));
+            green();
+        }
+
+        /* RED */
+        function red(position)
+        {
+            var red = document.getElementById("red");
+            red.style.left = position.x + "px";
+            red.style.top = position.y + "px";
+        }
+        document.onmousemove = red;
+
+        /* GREEN */
+        function green() {
+            var green = document.getElementById("green");
+            var greenleft0 = parseInt(window.getComputedStyle(green, null).left.match(/\d/g).join(""));
+            var greentop0 = parseInt(window.getComputedStyle(green, null).top.match(/\d/g).join(""));
+
+            green.style.left = greenleft0 + 10 + "px";
+            green.style.top = greentop0 + 10 + "px";
+
+        console.log(window.getComputedStyle(green, null).left.match(/\d/g).join(""));
+        }
+        
+        /* BLUE */
+        function blue() {
+            var blue = document.getElementById("blue")
+            var blueleft0 = parseInt(window.getComputedStyle(blue, null).left.match(/\d/g).join(""));
+            var bluetop0 = parseInt(window.getComputedStyle(blue, null).top.match(/\d/g).join(""));
+            if (event.keyCode === 39){ //if right key pressed
+                blue.style.left = blueleft0 + 10 + "px";
+                
+            }
+            if (event.keyCode === 37){ //if left key pressed
+                blue.style.left = blueleft0 - 10 + "px";
+                
+            }
+            if (event.keyCode === 38){ //if top key pressed
+                blue.style.top = bluetop0 - 10 + "px";
+                
+            }
+            if (event.keyCode === 40){ //if down key pressed
+                blue.style.top = bluetop0 + 10 + "px";
+                
+            }
+        }
+
+        /* ORANGE */
+            var orange = document.getElementById("orange")
+            var orangeleft0 = parseInt(window.getComputedStyle(orange, null).left.match(/\d/g).join(""));
+            var orangetop0 = parseInt(window.getComputedStyle(orange, null).top.match(/\d/g).join(""));
+            var orangexvel = 0;
+            var orangeyvel = 0;
+        function orange() {
+
+            function orangecounter() {
+                if (event.keyCode === 68){ //if d key pressed
+                    orangexvel++
+                    console.log(orangexvel)
+                }
+                if (event.keyCode === 65){ //if a key pressed
+                    orangexvel--
+                    
+                }
+                if (event.keyCode === 87){ //if w key pressed
+                    orangeyvel--
+                    
+                }
+                if (event.keyCode === 83){ //if s key pressed
+                    orangeyvel++
+                    
+                }
+            }
+
+        }
+        window.onload(
+            setInterval(
+            function orangev() {
+                orange.style.left = orangeleft0 + parseInt(orangeyvel) + "px";
+                orange.style.top = orangetop0 + parseInt(orangexvel) + "px";
+                console.log(orangeleft0 + " --- " + orangexvel)
+            },1000))
+
+        /* right then +1px repeating each 1sec */
+        function multiple() {
+            blue();
+            orange();
+        }
+        onkeydown = multiple;
+    </script>
+</head>
+<body>
+    <main>
+        <div id="pruebas" contenteditable="true" ondblclick="pruebas()"></div>
+        <div id="red"></div>
+        <div id="blue"></div>
+        <div id="green"></div>
+        <div id="orange"></div>
+        <div id="black"></div>
+    </main>
+</body>
+</html>
