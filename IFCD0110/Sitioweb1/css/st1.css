@@ -67,11 +67,82 @@ header {
 }
 
 /* --- Figmotion --- */
-#figmotion {
+.Div1 {
+    z-index: -1;
+    position: relative;
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 20px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
+}
+.Div2 {
+    position: relative;
+}
+.Fig1 {
+    position: relative;
+    height: 300px;
+}
+.Fig2 {
+    display: inline-block;
+    position: relative;
+    width: 17%;
+    margin: 10px auto 10px auto;
+    border: 10px solid black;
+}
+.Img1 {
     width: 100%;
     height: 300px;
-    overflow: hidden;
+    z-index: -10;
 }
+.Img2 {
+    height: 80px;
+}
+.anterior {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 7%;
+    z-index: 10;
+}
+.anterior div {
+    visibility: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 99%;
+    background: linear-gradient(90deg, black 0%, rgba(255, 255, 255, 0) 100%);
+}
+.anterior:hover div {
+    visibility: visible;
+}
+.siguiente {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 7%;
+    z-index: 10;
+}
+.siguiente div {
+    visibility: hidden;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 99%;
+    background: linear-gradient(270deg, black 0%, rgba(255, 255, 255, 0) 100%);
+}
+.siguiente:hover div {
+    visibility: visible;
+}
+
 
 /* --- Main --- */
 main {
