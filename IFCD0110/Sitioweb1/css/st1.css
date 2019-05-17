@@ -13,6 +13,10 @@
 .img1 {
     width: 100%;
 }
+.p1 {
+    display: inline-block;
+    width: fit-content;
+}
 
 /* --- Header --- */
 header {
@@ -41,6 +45,25 @@ header {
     display: inline-block;
     margin: 0px 40px 0px 40px;
     padding: 10px;
+}
+#menu ul {
+    text-align: center;
+    position: absolute;
+}
+#menu ul li {
+    display: block;
+}
+#menu1 {
+    display: none;
+}
+#li1:hover #menu1 {
+    display: block;
+}
+#menu2 {
+    display: none;
+}
+#li2:hover #menu2 {
+    display: block;
 }
 
 /* --- Figmotion --- */
