@@ -1,0 +1,6 @@
+Dirección-->	http://www.alumno06.oropesia.es
+Servidor-->	access774916803.webspace-data.io
+Usuario-->	u96621930-AL06
+Contraseña-->	@cursoIFCD0110
+Puerto-->	22
+Protocolo-->	SFTP
